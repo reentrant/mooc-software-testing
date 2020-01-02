@@ -1,6 +1,6 @@
 //import java.util.Arrays;
 
-/**
+/** Birthday Paradox:
  * Let’s figure out the real chances of each person picking a different number:
  * The first person has a 100% chance of a unique number (of course)
  * The second has a (1 – 1/365)
@@ -23,7 +23,7 @@ public class Birthday {
 
         for (int j = 0; j < trials; j++) {
             int [] peopleInTheRoom = new int[n];
-            // TODO: Choose a birtday for the next person, between 0 and n-1
+            // Choose a birtday for the next person, between 0 and n-1
             for (int i = 0; i < n; i++) {
                 int nextPersonId = (int) (Math.random() * (n - 1));
                 if (peopleInTheRoom[nextPersonId] == 0) {

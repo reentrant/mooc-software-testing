@@ -1,4 +1,4 @@
-//import java.util.Arrays;
+// import java.util.Arrays;
 
 public class DiscreteDistribution {
     public static void main(String []args) {
@@ -16,9 +16,9 @@ public class DiscreteDistribution {
 
         int index;
         for (int i = 0; i < m; i++) {
-            // TODO: Pick a random integer betwieen 0 and Sn - 1
+            // Pick a random integer betwieen 0 and Sn - 1
             int r = (int) (Math.random() * (total - 1));
-            for(int j = 0; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 if (r < cumSums[j]) {
                     index = j + 1;
                     System.out.print(index + " ");
@@ -26,7 +26,6 @@ public class DiscreteDistribution {
                 }
             }
         }
-//        TODO: Delete
 //        System.out.println();
 //        System.out.println(Arrays.toString(argInts));
 //        System.out.println(Arrays.toString(cumSums));

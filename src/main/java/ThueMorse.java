@@ -1,4 +1,4 @@
-//import java.util.Arrays;
+// import java.util.Arrays;
 
 public class ThueMorse {
     public static void main(String [] args) {
@@ -15,17 +15,17 @@ public class ThueMorse {
         int end = 2 * basicSequence.length;
         int original_index = 0;
         thueSequence[original_index] = basicSequence[original_index];
-        for (int j = 0; start + j < thueLen; j++) {
-            if (start + j == end) {
+        for (int t = 0; start + t < thueLen; t++) {
+            if (start + t == end) {
                 start = end;
                 end *= 2;
-                j = 0;
+                t = 0;
             }
-            thueSequence[start + j] = thueSequence[j] ^ 1;
+            thueSequence[start + t] = thueSequence[t] ^ 1;
         }
 //        System.out.println(Arrays.toString(thueSequence));
 
-        // TODO: build a n x n pattern
+        // build a n x n pattern
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (thueSequence[i] == thueSequence[j]) {
