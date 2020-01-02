@@ -7,14 +7,12 @@ public class ThueMorse {
         // 1. what is the thue seq length?
         int thueLen = (int) Math.pow(2, Math.ceil(Math.log10(n) / Math.log10(2)));
 
-        // TODO: Construct the Thue Morse sequence
+        // Construct the Thue Morse sequence
         int [] thueSequence = new int[thueLen];
-
-
         int start = basicSequence.length;
         int end = 2 * basicSequence.length;
-        int original_index = 0;
-        thueSequence[original_index] = basicSequence[original_index];
+        int originalIndex = 0;
+        thueSequence[originalIndex] = basicSequence[originalIndex];
         for (int t = 0; start + t < thueLen; t++) {
             if (start + t == end) {
                 start = end;

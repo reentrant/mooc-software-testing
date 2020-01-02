@@ -40,7 +40,7 @@ public class Birthday {
             cumSums[i] = total;
             double fraction = 1.0 * cumSums[i] / trials;
             System.out.println(i + 1 +  "\t" + count[i] + "\t" + fraction);
-            if (fraction > 0.5)
+            if (fraction >= 0.5)
                 break;
         }
     }
