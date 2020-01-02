@@ -1,3 +1,5 @@
+package week03;
+
 public class Minesweeper {
     public static void main(String [] args) {
         int mRows = Integer.parseInt(args[0]);

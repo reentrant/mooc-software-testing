@@ -1,4 +1,4 @@
-// import java.util.Arrays;
+package week03;// import java.util.Arrays;
 
 public class ThueMorse {
     public static void main(String [] args) {

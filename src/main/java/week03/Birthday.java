@@ -1,6 +1,6 @@
-//import java.util.Arrays;
+package week03;//import java.util.Arrays;
 
-/** Birthday Paradox:
+/** week03.Birthday Paradox:
  * Let’s figure out the real chances of each person picking a different number:
  * The first person has a 100% chance of a unique number (of course)
  * The second has a (1 – 1/365)
