@@ -9,7 +9,7 @@ package week02;
 public class BandMatrix {
 
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
         int width = Integer.parseInt(args[1]);
 
@@ -27,8 +27,7 @@ public class BandMatrix {
 
                 if (distance > width) {
                     System.out.print("0  ");
-                }
-                else {
+                } else {
                     System.out.print("*  ");
                 }
             }
